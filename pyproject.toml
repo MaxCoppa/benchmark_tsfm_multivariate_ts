@@ -1,5 +1,22 @@
+[project]
+name = "benchmark-tsfm"
+version = "0.1.0"
+description = "Benchmark for Time Series Foundation Models"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "aeon>=1.6.0",
+    "benchopt>=1.10.0",
+    "mantis-tsfm>=1.1.0",
+    "scikit-learn>=1.9.1",
+]
+
 [tool.ruff]
 line-length = 88
 
 [tool.ruff.lint]
 select = ["E", "F"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.4",
+]
